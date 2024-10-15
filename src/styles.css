@@ -1,0 +1,13 @@
+/* src/styles.css */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  body.dark {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Other styling as needed */
+  
