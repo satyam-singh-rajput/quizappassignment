@@ -1,0 +1,95 @@
+/* QuizPage.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #555;
+}
+
+h4 {
+  color: #444;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Make the buttons full-width */
+  text-align: left; /* Align text to the left for better visibility */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+button:disabled {
+  background-color: #ccc; /* Disabled button style */
+  cursor: not-allowed;
+}
+
+/* Selected option styling */
+button.selected {
+  background-color: #28a745; /* Green background for selected option */
+  color: white; /* White text on green background */
+}
+
+/* Unselected options should still have distinct styling */
+button.unselected {
+  background-color: black; /* Light gray background for unselected options */
+  color: white; /* Darker text for readability */
+}
+
+div.progress-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+div.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #76c7c0;
+  transition: width 0.3s ease;
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+li {
+  background-color: black;
+  color: white;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+p {
+  color: #777;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  button {
+    width: 100%; /* Make buttons full-width on small screens */
+  }
+}

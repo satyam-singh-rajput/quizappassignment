@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
 import { Link } from "react-router-dom";
+import "../css/QuizSelection.css";
 const QuizSelection = () => {
   const [quizzes, setQuizzes] = useState([]);
+  
 
   useEffect(() => {
     const fetchQuizzes = async () => {

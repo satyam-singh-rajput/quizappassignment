@@ -1,5 +1,6 @@
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
+import "../css/AddQuizzes.css";
 
 const AddQuizzes = () => {
   const addSampleQuizzes = async () => {

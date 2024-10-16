@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useUser } from '../UserContext'; // Import UserContext
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
+import "../css/SignIn.css";
 
 const SignIn = () => {
   const { login } = useUser(); // Get login function from context

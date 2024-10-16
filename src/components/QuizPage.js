@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { doc, getDoc, addDoc, collection, getDocs, writeBatch } from "firebase/firestore"; 
 import { db } from "../firebase"; 
 import { auth } from "../firebase"; 
+import "../css/QuizPage.css";
 
 const QuizPage = () => {
   const { quizId } = useParams();
@@ -159,7 +160,7 @@ const QuizPage = () => {
                   onClick={() => handleAnswerSubmit(option)}
                   style={{
                     backgroundColor:
-                      selectedAnswers[currentQuestionIndex]?.includes(option) ? "lightblue" : "initial", // Highlight selected options for multiple-choice
+                      selectedAnswers[currentQuestionIndex]?.includes(option), // Highlight selected options for multiple-choice
                   }}
                 >
                   {option}

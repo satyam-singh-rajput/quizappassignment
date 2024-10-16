@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
-
+import "../css/UploadQuiz.css";
 const UploadQuiz = () => {
   const [title, setTitle] = useState("");
   const [questions, setQuestions] = useState([

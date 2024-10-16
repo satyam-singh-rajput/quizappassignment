@@ -2,6 +2,7 @@ import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase"; // Import Firebase authentication from firebase.js
 import { useNavigate } from "react-router-dom"; // To redirect after login
+import "../css/Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");

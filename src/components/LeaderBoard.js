@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import { db } from "../firebase";
-
+import "../css/LeaderBoard.css";
 const Leaderboard = () => {
   const [scores, setScores] = useState([]);
 

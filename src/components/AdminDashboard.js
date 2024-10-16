@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'; // Add this line
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase";
+import "../css/AdminDashboard.css";
 
 const AdminDashboard = () => {
   const [scores, setScores] = useState([]);
