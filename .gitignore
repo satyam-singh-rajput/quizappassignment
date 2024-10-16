@@ -7,4 +7,4 @@ node_modules/
 # Optionally ignore build folder (if you're building the app locally)
 /build
 
-/src/firebase.js
+# /src/firebase.js
